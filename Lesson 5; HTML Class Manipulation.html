@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 20px;
+    }
+    body{
+        background: wheat;
+    }
+    .black {
+        background: black;
+    }
+    .white {
+        background: white;
+        color: black;
+    }
+
+</style>
+<body>
+    <button class="turnWhite">
+        Dark Theme
+    </button>
+    <script>
+        function darkTheme () {
+            let button = document.querySelector ("body")
+            button.classList.add('black')
+         }
+        let button = document.querySelector("button")
+        button.addEventListener("click",darkTheme)
+
+        function lightTheme () {
+            let button = document.querySelector (".turnWhite")
+            button.classList.add('white')   
+        }
+        let turnWhite = document.querySelector("button")
+        turnWhite.addEventListener("click",lightTheme) 
+    </script>
+    
+</body>
+</html>
